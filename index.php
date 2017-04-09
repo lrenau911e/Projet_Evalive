@@ -7,13 +7,20 @@
     </head>
     <body>
         <?php include 'header.php'; ?>
-        <p>Bienvenu sur Evalive !</p>
+        
 
         <!-- Inscription ou connexion ? -->
-        <p> Si c'est votre première visite, inscrivez-vous ! </p>
-        <p> <a href="inscription.php">inscription</a></p>
-        <p> Si vous êtes déjà inscrit, connectez-vous ! </p>
-        <p><a href="connexion.php">connexion</a></p>
+        <div class="titre">
+            <p>Bienvenu sur Evalive !</p>
+        </div>
+        <div class="accueil">
+            <br/>
+            <p> Si c'est votre première visite, inscrivez-vous ! </p>
+            <p> <a href="inscription.php" class="inputs">INSCRIPTION</a></p>
+            <br/>
+            <p> Si vous êtes déjà inscrit, connectez-vous ! </p>
+            <p><a href="connexion.php" class="inputs">CONNEXION</a></p>
+        </div>
 
     </body>
 </html>
