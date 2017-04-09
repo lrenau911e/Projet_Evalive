@@ -2,10 +2,11 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="mainStyle.css" />
         <title>Evalive</title>
     </head>
     <body>
+        <?php include 'header.php'; ?>
         <p>Bienvenu sur Evalive !</p>
 
         <!-- Inscription ou connexion ? -->

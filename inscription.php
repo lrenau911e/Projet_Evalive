@@ -3,10 +3,12 @@
     <head>
         <meta charset="utf-8">
         <title>Inscription</title>
-        <link rel="stylesheet" href="style.css" type="text/css">
+        <link rel="stylesheet" href="mainStyle.css" type="text/css">
     </head>
-    <body>        
-        <div class="inscription">
+    <body>
+        <?php  include 'header.php'; ?>
+
+        <div class="connexion">
             <form method="POST" action="creationProfil.php">
                 <input type="text" name="nom" class="inputs" placeholder="Nom"/>
                 <br/>
@@ -25,7 +27,7 @@
                     <option value="2" selected>Enseignant</option>
                     <option value="3">Externe</option>
                 </select>
-                <button type="submit" class="btnMenu" >Confirmer</button>
+                <button type="submit" class="btnConnexion" >Confirmer</button>
                 <br/>
             </form>
         </div>

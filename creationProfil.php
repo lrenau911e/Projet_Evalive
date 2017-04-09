@@ -1,4 +1,5 @@
 <?php
+include 'header.php';
 $nameUser = $_POST['nom'];
 $firstNameUser = $_POST['prenom'];
 $idUser = $_POST['id'];

@@ -1,6 +1,7 @@
 <?php
+include 'header.php';
 session_start();
-//require("connect.php");
+
 $BDD = new PDO('mysql:host=localhost;dbname=projet_web;charset=utf8', 'Loic.Renault', 'Lou.35.Lou', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
 
 if (isset($_POST['mdp']) AND isset($_POST['login'])) 
