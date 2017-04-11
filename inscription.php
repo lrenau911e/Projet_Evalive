@@ -8,7 +8,7 @@
     <body>
         <?php  include 'header.php'; ?>
 
-        <div class="connexion">
+        <div class = "connexion">
             <form method="POST" action="creationProfil.php">
                 <input type="text" name="nom" class="inputs" placeholder="Nom"/>
                 <br/>

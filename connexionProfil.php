@@ -1,5 +1,4 @@
-<?php
-include 'header.php';
+<?php 
 session_start();
 
 $BDD = new PDO('mysql:host=localhost;dbname=projet_web;charset=utf8', 'Loic.Renault', 'Lou.35.Lou', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
@@ -22,6 +21,7 @@ if (isset($_POST['mdp']) AND isset($_POST['login']))
             $_SESSION['no_personne'] = $donnees['no_personne'];
         }
     }
-    echo 'Bonjour et bienvenu sur votre session!';
+    //echo 'Bonjour et bienvenu sur votre session '.$login.'!';
 }
+header ('Location: index.php');
 ?>
