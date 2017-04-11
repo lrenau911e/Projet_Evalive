@@ -22,7 +22,7 @@ else
     {
         $BDD = new PDO('mysql:host=localhost;dbname=projet_web;charset=utf8', 'Loic.Renault', 'Lou.35.Lou', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
 
-        $RequeteConnexion = $BDD -> query ('SELECT DISTINCT COUNT(login) AS nblog FROM PERSONNE WHERE login=\'$idUser\'');
+        $RequeteConnexion = $BDD -> query ('SELECT DISTINCT COUNT(login) AS nblog FROM PERSONNE WHERE login= \''.$idUser. '\''); //Problème de requête, nblog semble être à 0 par défaut
         $donnees = $RequeteConnexion ->fetch();
 
         if ($donnees['nblog']==0) 

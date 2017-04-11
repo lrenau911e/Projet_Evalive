@@ -26,8 +26,8 @@
                 {
                     $nom = $_SESSION['nom'];
                     $prenom = $_SESSION['prenom'];
-                    echo "<a href='deconnexion.php' class='btnDeco'>Deconnexion</a>";
-                    echo "<div class='connecte'><p class='user'>Connecté en tant que<br/> $nom $prenom </p></div>";
+                    echo "<a href='deconnexion.php' class='btnMenu'>Deconnexion</a>";
+                    echo "<div class='connecte'><p class='user'>Connecté en tant que<br/> $nom $prenom</p></div>";
                 }
                 //session_write_close();
                 ?>
