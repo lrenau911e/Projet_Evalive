@@ -16,7 +16,6 @@
             </div>
             <div class="menu2">
                 <?php
-                //session_start();
                 if (!isset($_SESSION['login'])) 
                 {
                     echo "<a href='inscription.php' class='btnMenu'>Inscription</a>";
@@ -29,7 +28,6 @@
                     echo "<a href='deconnexion.php' class='btnMenu'>Deconnexion</a>";
                     echo "<div class='connecte'><p class='user'>Connecté en tant que<br/> $nom $prenom</p></div>";
                 }
-                //session_write_close();
                 ?>
             </div>
         </div>

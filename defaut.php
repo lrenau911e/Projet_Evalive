@@ -14,15 +14,15 @@
                 echo "<a href='supprimerGroupe.php' class='btnMenuLink'>Supprimer</a>";
             }
             echo "<br/><br/>";
-            // include 'afficherGroupe.php';
+            include 'afficherActivite.php';
             ?>
         </div>
 
         <div class="projet">
-            <h1>Mes Projets</h1>
+            <h1>Mes Activités</h1>
             <a href='creerProjet.php' class='btnMenuLink'>Créer</a>
             <a href='supprimerProjet.php' class='btnMenuLink'>Supprimer</a>
-            <a href='candidatureProjet.php' class='btnMenuLink'>Candidater</a>
+            <a href='candidaterActivite.php' class='btnMenuLink'>Candidater</a>
             <br/><br/>
             <?php
             // include 'afficherProjet.php';
