@@ -42,6 +42,7 @@ session_start();
 	            
 	            //echo 'On est bien rentré dans la condition insertion';
 	        }
+	        //Il faut prendre en compte le cas où l'on est déjà inscrit
         ?>
 
         <div>

@@ -25,7 +25,6 @@
                 <select class="inputs" name="statut">
                     <option value="1">Etudiant</option> 
                     <option value="2" selected>Enseignant</option>
-                    <option value="3">Externe</option>
                 </select>
                 <button type="submit" class="btnConnexion" >Confirmer</button>
                 <br/>
