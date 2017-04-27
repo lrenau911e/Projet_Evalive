@@ -12,7 +12,7 @@ while ($donnees = $requete -> fetch())
 {
     echo "<b>Nom : </b>" .$donnees['nom_activite']. "<br/>";
     echo "<b>Description : </b>" .$donnees['description']."<br/>";
-    echo "<b>Avancement : étape </b>" .$donnees['avancement']. " /".$donnees['nb_etape']."<br/>";
+    echo "<b>Avancement : étape </b>" .$donnees['avancement']. " /".$donnees['nb_etape']."<br/><br/>";
 
 }
 

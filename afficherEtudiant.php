@@ -14,7 +14,7 @@ while ($donnees = $requete -> fetch())
 	echo "<b>Nom : </b>" .$donnees['prenom_personne'];
 	echo $donnees['nom_personne']. "<br/>";
     echo "<b>Activite : </b>" .$donnees['nom_activite']. "<br/>";
-    echo "<b>Avancement : </b>" .$donnees['avancement']. " /".$donnees['nb_etape']."<br/>";
+    echo "<b>Avancement : </b>" .$donnees['avancement']. " /".$donnees['nb_etape']."<br/><br/>";
     
 }
 

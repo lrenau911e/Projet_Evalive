@@ -10,16 +10,16 @@
             <div class="menu">
                 
                 <a href="index.php" class="btnMenu">Accueil</a>
-                <a href="" class="btnMenu">Modules</a>
-                <a href="" class="btnMenu">A Propos</a>
+                <!--<a href="" class="btnMenu">Modules</a>
+                <a href="" class="btnMenu">A Propos</a>-->
                 
             </div>
             <div class="menu2">
                 <?php
                 if (!isset($_SESSION['login'])) 
                 {
-                    echo "<a href='inscription.php' class='btnMenu'>Inscription</a>";
-                    echo "<a href='connexion.php' class='btnMenu'>Connexion</a>";
+                    //echo "<a href='inscription.php' class='btnMenu'>Inscription</a>";
+                    //echo "<a href='connexion.php' class='btnMenu'>Connexion</a>";
                 } 
                 else 
                 {

@@ -20,9 +20,8 @@ if (isset($_POST['mdp']) AND isset($_POST['login']))
         $_SESSION['prenom'] = $donnees['prenom_personne'];
         $_SESSION['type'] = $donnees['type'];
         $_SESSION['id'] = $donnees['no_personne'];
-        echo 'On est bien rentrés dans la boucle. ';
     }
-    echo 'Bonjour et bienvenu sur votre session '.$_SESSION['nom'].'!';
+    //echo 'Bonjour et bienvenu sur votre session '.$_SESSION['nom'].'!';
 }
 else
 {

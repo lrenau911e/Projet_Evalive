@@ -1,4 +1,5 @@
 <?php
+session_start();
 include 'header.php';
 $nameUser = $_POST['nom'];
 $firstNameUser = $_POST['prenom'];
@@ -22,7 +23,7 @@ else
     {
         $BDD = new PDO('mysql:host=localhost;dbname=projet_web;charset=utf8', 'Loic.Renault', 'Lou.35.Lou', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
 
-        $RequeteConnexion = $BDD -> query ('SELECT DISTINCT COUNT(login) AS nblog FROM PERSONNE WHERE login= \''.$idUser. '\''); //Problème de requête, nblog semble être à 0 par défaut
+        $RequeteConnexion = $BDD -> query ('SELECT DISTINCT COUNT(login) AS nblog FROM PERSONNE WHERE login= \''.$idUser. '\'');
         $donnees = $RequeteConnexion ->fetch();
 
         if ($donnees['nblog']==0) 
@@ -37,9 +38,19 @@ else
                 'statut' => $type
                 ));
             echo 'Insertion ok';
+            $_SESSION['login'] = $idUser;
+            $_SESSION['mdp'] = $passwordUser;
+            $_SESSION['nom'] = $nameUser;
+            $_SESSION['prenom'] = $firstNameUser;
+            $_SESSION['type'] = $type;
+
+            $RequeteConnexion = $BDD -> query ('SELECT no_personne FROM PERSONNE WHERE login = \'' .$idUser. '\'');
+            $donnees = $RequeteConnexion->fetch();
+            $_SESSION['id'] = $donnees['no_personne'];
         }
         else
             echo'pas ok';
     }
 }
+header ('Location: index.php');
 ?> 
